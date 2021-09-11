@@ -81,7 +81,7 @@ class Http4kServerTest {
                     "    \"id\": \"23\",\n" +
                     "    \"name\": \"Ram\"\n" +
                     "}"
-            val postApiResponse = testClientUtil.postApi("$host/postApiReqMsg?id=3&name=Ram", body)
+            val postApiResponse = testClientUtil.postApi("$host/postApiReqMsg?id=23&name=Ram", body)
             assert(postApiResponse.id == 23)
             assert(postApiResponse.name == "Ram")
             println(postApiResponse)
